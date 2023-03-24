@@ -13,6 +13,7 @@ ul {
 
 .body {
   --main-color: #00466F;
+  --second-color: #1799E5;
   font-family: 'Catamaran', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -197,12 +198,35 @@ option[default] {
 }
 
 .pages__item :hover {
-  --second-color: #1799E5;
+  
+  color: var(--second-color);
 }
 // це для ховер чи ектів? додати підкреслення ще! і картинка теж міняє колір ?
 
+.rating {
+    padding: 20px 0;
+}
+
+.rating__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .rating__platform {
-  color: var(--main-color);
+  color: var(--second-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 80px;
+}
+
+.rating__div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
 }
 
 .rating__logo {
@@ -213,4 +237,65 @@ option[default] {
 .rating__star {
   width: 58px;
     height: 10px;
+}
+
+.rating__number {
+  font-weight: 400;
+    font-size: 45px;
+    line-height: 55px;
+  color: var(--main-color);
+}
+
+.writer {
+  width: 323.33px;
+  height: 460px;
+// ЦЕ ТИМЧАСОВО!!!!!!!!!!
+}
+
+.writer__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.writer__pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.writer__name {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.writer__orders {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222526;
+}
+
+.writer__stars {
+  width: 87px;
+  height: 15px;
+}
+
+.writer__rate {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--main-color);
+}
+
+.writer__reviews {
+  font-size: 12px;
+  line-height: 15px;
+  color: #737B80;
+}
+
+.writer__stats {
+  display: flex;
+
 }
