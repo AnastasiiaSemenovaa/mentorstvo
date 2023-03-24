@@ -1,12 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Webpack Starter with SCSS and Dev Server</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Webpack starter with SCSS and dev server</h1>
-    <img src="images/owl.png" alt="">
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PapersOwl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__logo">
+      <img src="images/Logo 2.png" alt="logo" class="logo">
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li>
+          <a class="nav__item" href="#">Service</a>
+        </li>
+        <li>
+          <a class="nav__item" href="#">Writing Tools</a>
+        </li>
+        <li>
+          <a class="nav__item" href="#">How it Works</a>
+        </li>
+        <li>
+          <a class="nav__item" href="#">Support</a>
+        </li>
+        <li>
+          <a class="nav__item" href="#">About Us</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <a href="#" class="header__login">
+      <img src="images/Page-1.png" alt="login" class="header__login--image--position">
+      log in
+    </a>
+    <button type="submit" class="order-button">order now</button>
+  </header>
+  <main>
+   <section class="main-form">
+<div>
+  <h1 class="main-form__title">Get your professionally-researched
+  and well-written <span class="main-form__title--highlight">Dissertation</span><br/>
+  with PapersOwl</h1>
+  <div class="form">
+    <form action="/" method="POST">
+      <label >
+        <select name="essay-type" class="form__select">
+          <option value="" default selected>Essay (Any type)</option>
+          <option value="article">Article (Any type) </option>
+          <option value="assignment">Assignment </option>
+          <option value="bibliography">Annotated Bibliography</option>
+          <option value="capstone project">Capstone Project </option>
+          <option value="content">Content(Any type) </option>
+          <option value="coursework">Coursework </option>
+          <option value="dissertation">Dissertation </option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="my@mail.com"
+        class="form__email"
+        >
+    </form>
+    <button type="submit" class="order-button form__button">Let’s start now</button>
+
+    <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service and privacy policy. We’ll occasionally send you promo
+    and account related emails.</p>
+  </div>
+</div>
+<div>
+  <img src="images/owl.png" alt="owl" class="main-form__image">
+</div>
+   </section>
+      <section class="pages">
+<ul class="pages__list">
+  <li class="pages__item">
+    <label>
+    <img src="images/home 3.png" alt="home" class="pages__img">
+    <a href="/" class="pages__link">Home</a>
+    </label>
+  </li>
+    <li class="pages__item">
+      <label>
+        <img src="images/review.png" alt="reviews" class="pages__img">
+        <a href="/" class="pages__link">Reviews</a>
+      </label>
+    </li>
+  <li class="pages__item">
+    <label>
+      <img src="images/Vector.png" alt="how it works" class="pages__img">
+      <a href="/" class="pages__link">How It Works</a>
+    </label>
+  </li>
+  <li class="pages__item">
+    <label>
+      <img src="images/payment.png" alt="pricing" class="pages__img">
+      <a href="/" class="pages__link">Pricing</a>
+    </label>
+  </li>
+  <li class="pages__item">
+    <label>
+      <img src="images/Vector-2.png" alt="faq" class="pages__img">
+      <a href="/" class="pages__link">FAQ</a>
+    </label>
+  </li>
+</ul>
+      </section>
+  <section class="experts">
+    <div class="rating">
+      <ul >
+        <li class="rating__platform">
+          <img 
+            src="images/site1.png" 
+            alt="papersowl rate" 
+            class="rating__logo"
+            >
+          <div>
+            Papersowl
+            <img 
+              src="images/ratings.png" 
+              alt="exact rate from papersowl"
+              class="rating__star"
+              >
+          </div>
+          <p>4.7/5</p>
+        </li>
+        <li>
+          <img 
+            src="images/site2.png"
+            alt="sitejabber rate" 
+            class="rating__logo"
+            >
+          <div>
+            Sitejabber
+            <img 
+              src="images/Sitejabber.png" 
+              alt="exact rate from papersowl"
+              class="rating__star"
+              >
+          </div>
+          <p>4.7/5</p>
+        </li>
+        <li>
+          <img 
+            src="images/site3.png" 
+            alt="reviews rate" 
+            class="rating__logo"
+            >
+          <div>
+            Reviews.io
+            <img 
+              src="images/reviews.png" 
+              alt="exact rate from papersowl"
+              class="rating__star"
+              >
+          </div>
+          <p>4.8/5</p>
+        </li>
+      </ul>
+    </div>
+    <div class="writer"></div>
+  </section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
 </html>
