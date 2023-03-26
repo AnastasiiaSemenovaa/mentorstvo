@@ -5,8 +5,12 @@
 body,
 h1,
 h2,
+h3,
+h4,
 p,
-ul {
+ul,
+li,
+hr {
   margin: 0;
   padding: 0;
 }
@@ -23,25 +27,32 @@ ul {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #fff;
   background-color: var(--main-color);
   padding: 10px;
+  
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+// якщо ставлю флекс на клас хедер чи мейн форм - то нічого не працює?!
 
 .logo {
   width: 165px;
   height: 40px;
+  margin-right: 200px;
+  // просто взяла 200, якщо 295 то все ламається
 }
-
-
 
 .nav__list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 25px;
 }
 
 .nav__item {
@@ -49,16 +60,79 @@ ul {
   text-decoration: none;
 }
 
+.nav__main-type::after {
+  // content: "";
+  // margin-left: 5px;
+  // transform: rotate(135deg);
+  // width: 5px;
+  // height: 5px;
+  // border-top: 2px solid;
+  // border-right: 2px solid;
+  // transition: transform .2s;
+  // transform-origin: 50% 40%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  content: "";
+  margin-left: 5px;
+}
+
+.nav__main-type:hover {
+  color:#FDC420;
+  cursor: pointer;
+}
+
+.nav__main-type:hover::after {
+  border: solid #FDC420;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  content: "";
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+}
+.dropdown__list {
+  margin-top: 5px;
+  margin-left: -10px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown__link {
+  color: var(--main-color);
+  text-decoration: none;
+  padding: 10px;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.nav__main-type:hover .dropdown {
+  display: inline-block;
+}
+
 .header__login {
   text-transform: uppercase;
   color: #FDC420;
   text-decoration: none;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  margin: 0 30px;
 }
 
 .header__login--image--position {
@@ -78,13 +152,14 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  border:0;
+  border:0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
 }
 // не міняється шрифт тексту кнопки!!!
+
 
 .main-form {
   background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
@@ -122,7 +197,8 @@ ul {
   background: var(--main-color);
   border-radius: 6px;
   padding: 20px;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 select {
@@ -158,14 +234,15 @@ option[default] {
   padding: 15px 30px;
   width: 193px;
   height: 50px;
+  display: inline-block;
 }
 // треба задавати ширину і висоту кнопкам ?
 // як правильно скачувати картинки з фігми ? в 4х? якість щоб була гуд
+
 .pages {
   background: #E6F2FF;
   padding: 15px 135px 0px;
 }
-
 
 .pages__list {
   display: flex;
@@ -198,10 +275,9 @@ option[default] {
 }
 
 .pages__item :hover {
-  
   color: var(--second-color);
 }
-// це для ховер чи ектів? додати підкреслення ще! і картинка теж міняє колір ?
+// це для ховер чи ектів? додати підкреслення ще! і картинка теж міняє колір?
 
 .rating {
     padding: 20px 0;
@@ -246,20 +322,54 @@ option[default] {
   color: var(--main-color);
 }
 
-.writer {
-  width: 323.33px;
-  height: 460px;
-// ЦЕ ТИМЧАСОВО!!!!!!!!!!
+.experts {
+  display: flex;
+  flex-direction: column;
+}
+.writers{
+  display: flex;
+  justify-content: center;
 }
 
+.experts__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin: 60px 0 30px;
+  display: block;
+}
+
+.writer__block {
+  width: 323.33px;
+  height: 460px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 15px rgba(0, 70, 111, 0.15);
+  border-radius: 7px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 15px;
+  padding: 20px;
+}
+
+.writer__block:not(last-child) {
+  margin-right: 30px;
+}
+
+
 .writer__info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 80px 190px;
+  column-gap: 15px;
+}
+.writer__text {
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 
 .writer__pic {
-  width: 80px;
   height: 80px;
   border-radius: 5px;
 }
@@ -277,16 +387,21 @@ option[default] {
   line-height: 20px;
   color: #222526;
 }
+.writer__stats {
+  display: flex;
+}
 
 .writer__stars {
   width: 87px;
   height: 15px;
+  margin-right: 10px;
 }
 
 .writer__rate {
   font-size: 12px;
   line-height: 15px;
   color: var(--main-color);
+  margin-right: 5px;
 }
 
 .writer__reviews {
@@ -295,7 +410,65 @@ option[default] {
   color: #737B80;
 }
 
-.writer__stats {
-  display: flex;
+.writer__expertize-block {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 
+.writer__name-of-article {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color:var(--main-color);
+}
+
+.writer__main-types {
+  font-size: 12px;
+  line-height: 15px;
+  color: #ACB8BF;
+}
+
+.writer__specialization {
+  font-size: 14px;
+  line-height: 20px;
+  color: #222526;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.writer__sample-pic {
+  background-image: url(images/sample.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 125px;
+  height: 180px;
+  background-size: cover;
+  position: relative;
+}
+
+.writer__sample-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--second-color);
+  text-decoration-line: underline;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  
+}
+
+.writer__expertize-block--style-position {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+hr {
+   width: 283.33px;
+  border: 1px solid #DFE6EB;
+ }
+//  лінія - підкреслення
+
+.writer__button {
+  width: 283.33px;
 }

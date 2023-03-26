@@ -9,21 +9,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
 </head>
 
 <body class="body">
   <header class="header">
+    <div class="container">
     <div class="header__logo">
       <img src="images/Logo 2.png" alt="logo" class="logo">
     </div>
     <nav class="nav">
       <ul class="nav__list">
         <li>
-          <a class="nav__item" href="#">Service</a>
+          <div class="nav__item">
+            <div class="nav__main-type">
+            Service
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Essay (Any type) </a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Article (Any type)</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Assignment</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Annotated Bibliography</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Capstone Project</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Content(Any type)</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Coursework</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Dissertation</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Other</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li>
-          <a class="nav__item" href="#">Writing Tools</a>
+          <div class="nav__item">
+            <div class="nav__main-type">
+              Writing Tools
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Plagiarism checker </a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Thesis generator</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Conclusion generator</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Paraphrasing tool</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li>
           <a class="nav__item" href="#">How it Works</a>
@@ -32,26 +62,41 @@
           <a class="nav__item" href="#">Support</a>
         </li>
         <li>
-          <a class="nav__item" href="#">About Us</a>
+          <div class="nav__item">
+            <div class="nav__main-type">
+              About Us
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Contacts</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">What is PapersOwl</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">FAQ</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Top Writers</a></li>
+                <li class="dropdown__item"><a href="/" class="dropdown__link">Blog</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
-    
+
     <a href="#" class="header__login">
       <img src="images/Page-1.png" alt="login" class="header__login--image--position">
       log in
     </a>
     <button type="submit" class="order-button">order now</button>
+</div>
   </header>
   <main>
    <section class="main-form">
-<div>
-  <h1 class="main-form__title">Get your professionally-researched
-  and well-written <span class="main-form__title--highlight">Dissertation</span><br/>
-  with PapersOwl</h1>
-  <div class="form">
-    <form action="/" method="POST">
-      <label >
+    <div class="container">
+      <div>
+      <h1 class="main-form__title">Get your professionally-researched
+      and well-written <span class="main-form__title--highlight">Dissertation</span><br/>
+      with PapersOwl</h1>
+      <div class="form">
+        <form action="/" method="POST">
+        <label >
         <select name="essay-type" class="form__select">
           <option value="" default selected>Essay (Any type)</option>
           <option value="article">Article (Any type) </option>
@@ -63,25 +108,27 @@
           <option value="dissertation">Dissertation </option>
           <option value="other">Other</option>
         </select>
-      </label>
-      <input 
+        </label>
+        <input 
         type="email" 
         name="email" 
         placeholder="my@mail.com"
         class="form__email"
         >
-    </form>
-    <button type="submit" class="order-button form__button">Let’s start now</button>
-
-    <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service and privacy policy. We’ll occasionally send you promo
-    and account related emails.</p>
+       <button type="submit" class="order-button form__button">Let’s start now</button>
+        <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service and privacy policy. We’ll occasionally send you promo
+        and account related emails.</p>
+      </form>
   </div>
 </div>
 <div>
   <img src="images/owl.png" alt="owl" class="main-form__image">
 </div>
+
+</div>
    </section>
       <section class="pages">
+            <div class="container">
 <ul class="pages__list">
   <li class="pages__item">
     <label>
@@ -114,8 +161,10 @@
     </label>
   </li>
 </ul>
+  </div>
       </section>
-  <section class="experts">
+  <section>
+        <div class="container">
     <div class="rating">
       <ul class="rating__list">
         <li class="rating__platform">
@@ -168,34 +217,126 @@
         </li>
       </ul>
     </div>
-    <div class="writer">
-      <h2 class="writer__title">Choose your writer</h2>
+        </div>
+    <section class="experts">
+      <h2 class="experts__title">Choose your writer</h2>
+      <div class="writers">
       <div class="writer__block">
         <div class="writer__info">
-          <div><img
+          <img
             src="images/writer1.png"
             alt="Dr. Mumbo" 
             class="writer__pic"
-          ></div>
-          <div><h3 class="writer__name">Dr. Mumbo</h3>
-          <p class="writer__orders">Completed orders: 497</p>
+          >
+          <div class="writer__text">
+            <h3 class="writer__name">Dr. Mumbo</h3>
+            <p class="writer__orders">Completed orders: 497</p>
+            <div class="writer__stats">
+              <img 
+                src="images/ratings.png"
+                alt="number of stars"
+                class="writer__stars"
+              >
+              <p class="writer__rate">4.9</p>
+              <p class="writer__reviews">(472)</p>
           </div>
-          <div class="writer__stats">
-            <img 
-              src="images/ratings.png"
-              alt="number of stars"
-              class="writer__stars"
-            >
-            <p class="writer__rate">4.9</p>
-            <p class="writer__reviews">(472)</p>
           </div>
         </div>
+        <hr>
+        <div class="writer__sample">
         <h4 class="writer__name-of-article">Pros and Cons of Distance Education</h4>
+        <div class="writer__expertize-block">
+          <div>
+          <p class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span></p>
+          <p class="writer__main-types">Subject: <span class="writer__specialization">English</span></p>
+          <div class="writer__expertize-block--style-position">
+          <p class="writer__main-types">Style:<span class="writer__specialization">APA</span></p>
+          <p class="writer__main-types">Sources:<span class="writer__specialization">2</span></p>
+        </div>
+        </div>
 
-      </div>
-      
+          <div class="writer__sample-pic">
+          <a href="/" class="writer__sample-link">Read sample</a>
+         </div>
+        </div>
+        </div>
+        <button type="submit" class="order-button writer__button">hire writer</button>
     </div>
+      
+        <div class="writer__block">
+          <div class="writer__info">
+            <img src="images/writer2.png" alt="Prof Quality" class="writer__pic">
+            <div class="writer__text">
+              <h3 class="writer__name">Prof Quality</h3>
+              <p class="writer__orders">Completed orders: 689</p>
+              <div class="writer__stats">
+                <img src="images/ratings.png" alt="number of stars" class="writer__stars">
+                <p class="writer__rate">4.9</p>
+                <p class="writer__reviews">(472)</p>
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="writer__sample">
+          <h4 class="writer__name-of-article">Transgender People Should Be Allowed To Serve in the Military</h4>
+          <div class="writer__expertize-block">
+            <div>
+              <p class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span></p>
+              <p class="writer__main-types">Subject: <span class="writer__specialization">English</span></p>
+              <div class="writer__expertize-block--style-position">
+                <p class="writer__main-types">Style:<span class="writer__specialization">APA</span></p>
+                <p class="writer__main-types">Sources:<span class="writer__specialization">2</span></p>
+              </div>
+            </div>
+          
+            <div class="writer__sample-pic">
+              <a href="/" class="writer__sample-link">Read sample</a>
+            </div>
+          </div>
+          </div>
+          <button type="submit" class="order-button writer__button">hire writer</button>
+          </div>
+
+<div class="writer__block">
+  <div class="writer__info">
+    <img src="images/writer3.png" alt="ProfoundWriter" class="writer__pic">
+    <div class="writer__text">
+      <h3 class="writer__name">ProfoundWriter</h3>
+      <p class="writer__orders">Completed orders: 689</p>
+      <div class="writer__stats">
+        <img 
+          src="images/ratings.png"
+          alt="number of stars"
+          class="writer__stars"
+          >
+        <p class="writer__rate">4.9</p>
+        <p class="writer__reviews">(472)</p>
+      </div>
+    </div>
+  </div>
+    <hr>
+  <div class="writer__sample">
+    <h4 class="writer__name-of-article">Understanding Plagiarism and its Dangers in Academics</h4>
+    <div class="writer__expertize-block">
+      <div>
+        <p class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span></p>
+        <p class="writer__main-types">Subject: <span class="writer__specialization">English</span></p>
+        <div class="writer__expertize-block--style-position">
+          <p class="writer__main-types">Style:<span class="writer__specialization">APA</span></p>
+          <p class="writer__main-types">Sources:<span class="writer__specialization">2</span></p>
+        </div>
+      </div>
+    
+      <div class="writer__sample-pic">
+        <a href="/" class="writer__sample-link">Read sample</a>
+      </div>
+    </div>
+    </div>
+    <button type="submit" class="order-button writer__button">hire writer</button>
+    </div>
+</div>
   </section>
+
   <section></section>
   <section></section>
   <section></section>
