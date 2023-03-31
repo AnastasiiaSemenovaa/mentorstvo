@@ -30,15 +30,18 @@ hr {
   color: #fff;
   background-color: var(--main-color);
   padding: 10px;
-  
+  &__box {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .container {
-  display: flex;
-  justify-content: center;
   max-width: 1200px;
   padding: 0 15px;
+  margin: auto;
 }
+
 // якщо ставлю флекс на клас хедер чи мейн форм - то нічого не працює?!
 
 .logo {
@@ -47,6 +50,47 @@ hr {
   margin-right: 200px;
   // просто взяла 200, якщо 295 то все ламається
 }
+
+.nav {
+  &__item {
+    &:hover {
+      .dropdown {
+        z-index: 99999;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    &:after {
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      content: "";
+      margin-left: 5px;
+      transition: 0.5s;
+    }
+    &:hover {
+      color: #FDC420;
+      &:after{
+        border: solid #FDC420;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-135deg);
+        content: "";
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+
 
 .nav__list {
   list-style: none;
@@ -58,6 +102,7 @@ hr {
 .nav__item {
   color: #fff;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .nav__main-type::after {
@@ -70,35 +115,26 @@ hr {
   // border-right: 2px solid;
   // transition: transform .2s;
   // transform-origin: 50% 40%;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  content: "";
-  margin-left: 5px;
 }
 
-.nav__main-type:hover {
+.nav__item:hover {
   color:#FDC420;
   cursor: pointer;
 }
 
 .nav__main-type:hover::after {
-  border: solid #FDC420;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-135deg);
-  content: "";
-  margin-left: 5px;
-  transition: 0.5s;
+
 }
 
 .dropdown {
-  position: relative;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -999;
+  position: absolute;
+  transition: 0.3s;
+  background: #fff;
 }
+
 .dropdown__list {
   margin-top: 5px;
   margin-left: -10px;
@@ -147,12 +183,8 @@ hr {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  width: 143px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border:0px;
+  padding: 15px 30px;
+  border:0;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -163,9 +195,11 @@ hr {
 
 .main-form {
   background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
-  display: flex;
-  gap: 20px;
-  padding: 60px;
+  &__box {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+  }
 }
 
 .main-form__image {
@@ -363,6 +397,8 @@ option[default] {
   display: grid;
   grid-template-columns: 80px 190px;
   column-gap: 15px;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 15px;
 }
 .writer__text {
   display: grid;
