@@ -48,7 +48,6 @@ hr {
   width: 165px;
   height: 40px;
   margin-right: 200px;
-  // просто взяла 200, якщо 295 то все ламається
 }
 
 .nav {
@@ -115,6 +114,13 @@ hr {
   // border-right: 2px solid;
   // transition: transform .2s;
   // transform-origin: 50% 40%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  content: "";
+  margin-left: 5px;
 }
 
 .nav__item:hover {
@@ -190,7 +196,6 @@ hr {
   line-height: 20px;
   font-style: normal;
 }
-// не міняється шрифт тексту кнопки!!!
 
 
 .main-form {
@@ -270,8 +275,6 @@ option[default] {
   height: 50px;
   display: inline-block;
 }
-// треба задавати ширину і висоту кнопкам ?
-// як правильно скачувати картинки з фігми ? в 4х? якість щоб була гуд
 
 .pages {
   background: #E6F2FF;
@@ -311,7 +314,6 @@ option[default] {
 .pages__item :hover {
   color: var(--second-color);
 }
-// це для ховер чи ектів? додати підкреслення ще! і картинка теж міняє колір?
 
 .rating {
     padding: 20px 0;
@@ -503,7 +505,6 @@ hr {
    width: 283.33px;
   border: 1px solid #DFE6EB;
  }
-//  лінія - підкреслення
 
 .writer__button {
   width: 283.33px;
