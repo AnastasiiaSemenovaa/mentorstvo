@@ -830,3 +830,141 @@ option[default] {
     color: #FFFFFF;
   }
 }
+
+.footer {
+  padding: 40px auto 20px;
+  background-color: var(--main-color);
+
+
+}
+
+.connection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #4E7288;
+}
+
+.find-us {
+  width: 262.5px;
+  margin-right: 40px;
+
+  &__title  {
+     margin-bottom: 15px;
+  }
+  &__img {
+    margin-right: 15px;
+  }
+}
+
+.cards {
+  width: 262.5px;
+  margin-right: 40px;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+  
+  &__ways {
+    width: 167px;
+  }
+  &__icon {
+    margin-right: 1px;
+  }
+
+}
+.dmca {
+  width: 262.5px;
+  margin-right: 40px;
+}
+
+.trusted {
+  width: 262.5px;
+
+  &__link {
+    margin-right: 20px;
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #4E7288;
+}
+.list {
+  width: 262.5px;
+
+  &__link {
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BFDFFF;
+    margin-bottom: 10px;
+  }
+}
+
+.law {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ACB8BF
+}
+
+.cases {
+    width: 565px;
+    margin-right: 40px;
+
+  &__heading {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  
+}
+
+.terms {
+  width: 262.5px;
+  margin-right: 40px;
+
+  &__line {
+      margin-bottom: 1em;
+    }
+}
+
+.we {
+  &__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  &__link {
+    display: block;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #BFDFFF;
+    text-decoration: none;
+  }
+}
