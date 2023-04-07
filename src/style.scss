@@ -156,6 +156,8 @@ hr {
 
 
 .order-button {
+  display: inline-block;
+  text-align:center;
   padding: 15px 30px;
   font-weight: 700;
   font-size: 14px;
@@ -777,5 +779,54 @@ option[default] {
   }
   &__second-text {
     margin-right: 30px;
+  }
+}
+
+.service {
+  padding: 60px;
+  
+  &__heading {
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: #222526;
+  }
+  &__button {
+    margin-top: 15px;
+    background-color: var(--second-color);
+  }
+}
+
+.faq {
+  padding: 60px;
+  background-color: rgb(174, 42, 42);
+}
+
+
+.bottom-form {
+  padding-top: 60px;
+  background: linear-gradient(270deg, #298DCC 0%, #004F80 100%);
+
+  &__box {
+    display: flex;
+  }
+  &__img {
+    margin-right: 40px;
+  }
+  &__heading {
+    display: inline;
+  }
+  &__text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
   }
 }

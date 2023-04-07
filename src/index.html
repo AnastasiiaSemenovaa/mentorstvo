@@ -74,7 +74,7 @@
             </nav>
 
             <a href="#" class="header__login">
-                <img src="images/Page-1.png" alt="login" class="header__login--image--position">
+                <img src="images/login.svg" alt="login" class="header__login--image--position">
                 log in
             </a>
             <a href="#form"  class="order-button btn-orange">order now</a>
@@ -90,31 +90,29 @@
                         and well-written <span class="main-form__title--highlight">Dissertation</span><br/>
                         with PapersOwl</h1>
                     <div class="form">
-                        <form action="/" method="POST">
-                            <label>
-                                <select name="essay-type" class="form__select">
-                                    <option value="" default selected>Essay (Any type)</option>
-                                    <option value="article">Article (Any type)</option>
-                                    <option value="assignment">Assignment</option>
-                                    <option value="bibliography">Annotated Bibliography</option>
-                                    <option value="capstone project">Capstone Project</option>
-                                    <option value="content">Content(Any type)</option>
-                                    <option value="coursework">Coursework</option>
-                                    <option value="dissertation">Dissertation</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </label>
-                            <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="my@mail.com"
-                                    class="form__email"
-                            >
-                            <button type="submit" class="order-button form__button">Let’s start now</button>
-                            <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service
-                                and privacy policy. We’ll occasionally send you promo
-                                and account related emails.</p>
-                        </form>
+                      <form action="/" method="POST">
+                        <select name="essay-type" class="form__select">
+                            <option value="" default selected>Essay (Any type)</option>
+                            <option value="article">Article (Any type)</option>
+                            <option value="assignment">Assignment</option>
+                            <option value="bibliography">Annotated Bibliography</option>
+                            <option value="capstone project">Capstone Project</option>
+                            <option value="content">Content(Any type)</option>
+                            <option value="coursework">Coursework</option>
+                            <option value="dissertation">Dissertation</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input
+                                type="email"
+                                name="email"
+                                placeholder="my@mail.com"
+                                class="form__email"
+                        >
+                        <button type="submit" class="order-button form__button">Let’s start now</button>
+                        <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service
+                        and privacy policy. We’ll occasionally send you promo
+                        and account related emails.</p>
+                     </form>
                     </div>
                 </div>
                 <div class="main-form__right">
@@ -166,56 +164,56 @@
     <section class="rating">
         <div class="container">
           <div class="rating__box">
-            <ul class="rating__list">
-              <li class="rating__platform">
+            <div class="rating__list">
+              <div class="rating__platform">
                 <img
                   src="images/site1.png"
                   alt="papersowl rate"
                   class="rating__logo"
                 >
-                <span class="rating__stars">
+                <div class="rating__stars">
                   Papersowl
                   <img
                     src="images/ratings.png"
                     alt="exact rate from papersowl"
                     class="rating__star"
                   >
-                </span>
-                <p class="rating__number">4.7/5</p>
-              </li>
-              <li class="rating__platform">
+                </div>
+                <div class="rating__number">4.7/5</div>
+              </div>
+              <div class="rating__platform">
                 <img
                   src="images/site2.png"
                   alt="sitejabber rate"
                   class="rating__logo"
                 >
-                <span class="rating__stars">
+                <div class="rating__stars">
                   Sitejabber
                 <img
                   src="images/Sitejabber.png"
                   alt="exact rate from papersowl"
                   class="rating__star"
                 >
-                </span>
-                <p class="rating__number">4.7/5</p>
-                </li>
-                <li class="rating__platform">
+                </div>
+                <div class="rating__number">4.7/5</div>
+              </div>
+                <div class="rating__platform">
                   <img
                     src="images/site3.png"
                     alt="reviews rate"
                     class="rating__logo"
                   >
-                  <span class="rating__stars">
+                  <div class="rating__stars">
                     Reviews.io
                     <img
                       src="images/reviews.png"
                       alt="exact rate from papersowl"
                       class="rating__star"
                     >
-                  </span>
-                  <p class="rating__number">4.8/5</p>
-                </li>
-            </ul>
+                  </div>
+                  <div class="rating__number">4.8/5</div>
+                </div>
+              </div>
           </div>
         </div>
       </section>
@@ -227,21 +225,23 @@
             <div class="writer__block">
                 <div class="writer__info">
                     <img
-                            src="images/writer1.png"
-                            alt="Dr. Mumbo"
-                            class="writer__pic"
+                      src="images/writer1.jpg"
+                      alt="Dr. Mumbo"
+                      class="writer__pic"
+                      width="80"
+                      height= "80"
                     >
                     <div class="writer__text">
                         <h3 class="writer__name">Dr. Mumbo</h3>
-                        <p class="writer__orders">Completed orders: 497</p>
+                        <div class="writer__orders">Completed orders: 497</div>
                         <div class="writer__stats">
                             <img
-                                    src="images/ratings.png"
-                                    alt="number of stars"
-                                    class="writer__stars"
+                              src="images/ratings.png"
+                              alt="number of stars"
+                              class="writer__stars"
                             >
-                            <p class="writer__rate">4.9</p>
-                            <p class="writer__reviews">(472)</p>
+                            <div class="writer__rate">4.9</div>
+                            <div class="writer__reviews">(472)</div>
                         </div>
                     </div>
                 </div>
@@ -249,15 +249,14 @@
                     <h4 class="writer__name-of-article">Pros and Cons of Distance Education</h4>
                     <div class="writer__expertize-block">
                         <div>
-                            <p class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span>
-                            </p>
-                            <p class="writer__main-types">Subject: <span
-                                    class="writer__specialization">English</span></p>
+                            <div class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span>
+                            </div>
+                            <div class="writer__main-types">Subject: <span class="writer__specialization">English</span></div>
                             <div class="writer__expertize-block--style-position">
-                                <p class="writer__main-types">Style:<span class="writer__specialization">APA</span>
-                                </p>
-                                <p class="writer__main-types">Sources:<span class="writer__specialization">2</span>
-                                </p>
+                            <div class="writer__main-types">Style:<span class="writer__specialization">APA</span>
+                            </div>
+                            <div class="writer__main-types">Sources:<span class="writer__specialization">2</span>
+                            </div>
                             </div>
                         </div>
 
@@ -271,14 +270,25 @@
 
             <div class="writer__block">
                 <div class="writer__info">
-                    <img src="images/writer2.png" alt="Prof Quality" class="writer__pic">
+                    <img 
+                      src="images/writer2.jpg" 
+                      alt="Prof Quality" 
+                      class="writer__pic"
+                      width="80"
+                      height= "80"
+                    >
                     <div class="writer__text">
                         <h3 class="writer__name">Prof Quality</h3>
-                        <p class="writer__orders">Completed orders: 689</p>
+                        <div class="writer__orders">Completed orders: 689</div>
                         <div class="writer__stats">
-                            <img src="images/value.png" srcset="images/value-x2.png 2x" alt="number of stars" class="writer__stars">
-                            <p class="writer__rate">4.9</p>
-                            <p class="writer__reviews">(472)</p>
+                            <img 
+                              src="images/value.png" 
+                              srcset="images/value-x2.png 2x" 
+                              alt="number of stars" 
+                              class="writer__stars"
+                            >
+                            <div class="writer__rate">4.9</div>
+                            <div class="writer__reviews">(472)</div>
                         </div>
                     </div>
                   </div>
@@ -287,15 +297,15 @@
                         Military</h4>
                     <div class="writer__expertize-block">
                         <div>
-                            <p class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span>
-                            </p>
-                            <p class="writer__main-types">Subject: <span
-                                    class="writer__specialization">English</span></p>
+                          <div class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span>
+                          </div>
+                            <div class="writer__main-types">Subject: <span
+                                    class="writer__specialization">English</span></div>
                             <div class="writer__expertize-block--style-position">
-                                <p class="writer__main-types">Style:<span class="writer__specialization">APA</span>
-                                </p>
-                                <p class="writer__main-types">Sources:<span class="writer__specialization">2</span>
-                                </p>
+                                <div class="writer__main-types">Style:<span class="writer__specialization">APA</span>
+                                </div>
+                                <div class="writer__main-types">Sources:<span class="writer__specialization">2</span>
+                                </div>
                             </div>
                         </div>
 
@@ -304,23 +314,29 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="order-button writer__button">hire writer</button>
+                <a href="/" class="order-button writer__button">hire writer</a>
             </div>
 
             <div class="writer__block">
                 <div class="writer__info">
-                    <img src="images/writer3.png" alt="ProfoundWriter" class="writer__pic">
+                    <img 
+                      src="images/writer3.jpg" 
+                      alt="ProfoundWriter" 
+                      class="writer__pic"
+                      width="80"
+                      height= "80"
+                    >
                     <div class="writer__text">
                         <h3 class="writer__name">ProfoundWriter</h3>
-                        <p class="writer__orders">Completed orders: 689</p>
+                        <div class="writer__orders">Completed orders: 689</div>
                         <div class="writer__stats">
                             <img
                                     src="images/ratings.png"
                                     alt="number of stars"
                                     class="writer__stars"
                             >
-                            <p class="writer__rate">4.9</p>
-                            <p class="writer__reviews">(472)</p>
+                            <div class="writer__rate">4.9</div>
+                            <div class="writer__reviews">(472)</div>
                         </div>
                     </div>
                 </div>
@@ -328,15 +344,15 @@
                     <h4 class="writer__name-of-article">Understanding Plagiarism and its Dangers in Academics</h4>
                     <div class="writer__expertize-block">
                         <div>
-                            <p class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span>
-                            </p>
-                            <p class="writer__main-types">Subject: <span
-                                    class="writer__specialization">English</span></p>
+                            <div class="writer__main-types">Paper Type: <span class="writer__specialization">Essay (Any Type)</span>
+                            </div>
+                            <div class="writer__main-types">Subject: <span
+                                    class="writer__specialization">English</span></div>
                             <div class="writer__expertize-block--style-position">
-                                <p class="writer__main-types">Style:<span class="writer__specialization">APA</span>
-                                </p>
-                                <p class="writer__main-types">Sources:<span class="writer__specialization">2</span>
-                                </p>
+                                <div class="writer__main-types">Style:<span class="writer__specialization">APA</span>
+                                </div>
+                                <div class="writer__main-types">Sources:<span class="writer__specialization">2</span>
+                                </div>
                             </div>
                         </div>
 
@@ -345,7 +361,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="order-button writer__button">hire writer</button>
+                <a href="/" class="order-button writer__button">hire writer</a>
             </div>
           </div>
         </div>
@@ -355,37 +371,38 @@
       <div class="customers__box">
         <h2 class="section-title">What our current customers say</h2>
         <section class="rating customers__ratings">
-          <div class="container">
-            <div class="rating__box">
-              <ul class="rating__list">
-                <li class="rating__platform">
-                  <img src="images/site1.png" alt="papersowl rate" class="rating__logo">
-                  <span class="rating__stars">
-                    Papersowl
-                    <img src="images/ratings.png" alt="exact rate from papersowl" class="rating__star">
-                  </span>
-                  <p class="rating__number">4.7/5</p>
-                </li>
-                <li class="rating__platform">
-                  <img src="images/site2.png" alt="sitejabber rate" class="rating__logo">
-                  <span class="rating__stars">
-                    Sitejabber
-                    <img src="images/Sitejabber.png" alt="exact rate from papersowl" class="rating__star">
-                  </span>
-                  <p class="rating__number">4.7/5</p>
-                </li>
-                <li class="rating__platform">
-                  <img src="images/site3.png" alt="reviews rate" class="rating__logo">
-                  <span class="rating__stars">
-                    Reviews.io
-                    <img src="images/reviews.png" alt="exact rate from papersowl" class="rating__star">
-                  </span>
-                  <p class="rating__number">4.8/5</p>
-                </li>
-              </ul>
+            <div class="container">
+              <div class="rating__box">
+                <div class="rating__list">
+                  <div class="rating__platform">
+                    <img src="images/site1.png" alt="papersowl rate" class="rating__logo">
+                    <div class="rating__stars">
+                      Papersowl
+                      <img src="images/ratings.png" alt="exact rate from papersowl" class="rating__star">
+                    </div>
+                    <div class="rating__number">4.7/5</div>
+                  </div>
+                  <div class="rating__platform">
+                    <img src="images/site2.png" alt="sitejabber rate" class="rating__logo">
+                    <div class="rating__stars">
+                      Sitejabber
+                      <img src="images/Sitejabber.png" alt="exact rate from papersowl" class="rating__star">
+                    </div>
+                    <div class="rating__number">4.7/5</div>
+                  </div>
+                  <div class="rating__platform">
+                    <img src="images/site3.png" alt="reviews rate" class="rating__logo">
+                    <div class="rating__stars">
+                      Reviews.io
+                      <img src="images/reviews.png" alt="exact rate from papersowl" class="rating__star">
+                    </div>
+                    <div class="rating__number">4.8/5</div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+
         <div class="client">
           <div class="client__profile">
             <img 
@@ -393,9 +410,9 @@
               alt="client`s picture"
               class="client__image"
               >
-            <p class="client__date">
+            <div class="client__date">
               <span class="client__name">customer-3306837</span> Feb 15, 2022
-            </p>
+            </div>
           </div>
           <div class="client__comments">
             <div class="client__evaluation">
@@ -628,17 +645,78 @@
           <h2 class="section-title ">ACTIVITY OF OUR WRITING MARKETPLACE SERVICE</h2>
           <div class="statistics__block">
             <div class="statistics__main">
-              <p class="statistics__main-text"><span class="statistics__main-data">138,904</span>Finished orders</p>
+              <div class="statistics__main-text"><span class="statistics__main-data">138,904</span>Finished orders</div>
             </div>
             <div class="statistics__groups">
-              <p class="statistics__second-text"><span class="statistics__second-data">566</span>Professional writers</p>
-              <p class="statistics__second-text"><span class="statistics__second-data">90</span>Writers online now</p>
-              <p class="statistics__second-text"><span class="statistics__second-data">11</span>Operators are online</p>
-              <p class="statistics__second-text"><span class="statistics__second-data">4.8</span>Of 5 average writers' score</p>
+              <div class="statistics__second-text"><span class="statistics__second-data">566</span>Professional writers</div>
+              <div class="statistics__second-text"><span class="statistics__second-data">90</span>Writers online now</div>
+              <div class="statistics__second-text"><span class="statistics__second-data">11</span>Operators are online</div>
+              <div class="statistics__second-text"><span class="statistics__second-data">4.8</span>Of 5 average writers' score</div>
             </div>
           </div>
       </div>
     </section>
+
+    <section class="service">
+      <div class="container">
+        <h2 class="section-title service__heading">Welcome to PapersOwl: Your Top Writing Service</h2>
+        <p class="service__text">PapersOwl is a trusted online paper writing service that has been providing academic assistance to students for many
+        years. When you access the site, you will find a simple layout allowing for fast navigation to the service you need. Our
+        site offers only professional and experienced writers that can handle any task and provide you with a high-quality essay
+        or other academic paper. If you are a student who is lacking time and needs a paper completed, PapersOwl is here to
+        help. Our team of writers will work with you through the whole process to ensure you get the best papers within your
+        specified deadline. Read on to learn more about this safe and secure online essay writing service right here!</p>
+        <a href="/" class="order-button service__button">order now</a>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">Papersowl FAQ</h2>
+        <div>ТУТ БУДЕ ВИПАДАЮЧИЙ СПИСОК !!!!!!!!!</div>
+
+      </div>
+    </section>
+
+    <section class="bottom-form">
+      <div class="container">
+        <div class="bottom-form__box">
+          <div class="bottom-form__left">
+            <img
+              src="images/bottom-owl.svg"
+              class="bottom-form__img"
+              alt="image of owl"
+              width="410"
+              height="342"
+            >
+          </div>
+          <div class="bottom-form__right">
+            <h2 class="main-form__title bottom-form__heading">Why wait? Place and <span class="main-form__title--highlight">order right now!</span></h2>
+            <p class="bottom-form__text">Just fill out the form, press the button, and have no worries!</p>
+            <div class="form">
+              <form action="/" method="POST">
+                <select name="essay-type" class="form__select">
+                  <option value="" default selected>Essay (Any type)</option>
+                  <option value="article">Article (Any type)</option>
+                  <option value="assignment">Assignment</option>
+                  <option value="bibliography">Annotated Bibliography</option>
+                  <option value="capstone project">Capstone Project</option>
+                  <option value="content">Content(Any type)</option>
+                  <option value="coursework">Coursework</option>
+                  <option value="dissertation">Dissertation</option>
+                  <option value="other">Other</option>
+                </select>
+                <input type="email" name="email" placeholder="my@mail.com" class="form__email">
+                <button type="submit" class="order-button form__button">continue</button>
+                <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service
+                  and privacy policy. We’ll occasionally send you promo
+                  and account related emails.</p>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 </main>
 <footer>
