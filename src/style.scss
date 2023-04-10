@@ -197,7 +197,7 @@ hr {
   border:0;
 
   &:hover {
-    background-color: rgb(123, 193, 17);
+    background-color: rgb(255, 175, 77);
     }
 }
 
@@ -329,6 +329,7 @@ option[default] {
 
   &__link {
     display: block;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 15px;
@@ -336,6 +337,17 @@ option[default] {
     text-decoration: none;
     transition: 0.3s;
   }
+}
+
+.is-active:hover:after {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 149.67px;
+  height: 0px;
+  content: "";
+  border: 3px solid #1799E5;
 }
 
 
@@ -527,7 +539,6 @@ option[default] {
     padding: 60px;
     background: #F2F9FF;
   }
-  
 }
 
 .client {
@@ -861,6 +872,8 @@ option[default] {
   }
   &__img {
     margin-right: 40px;
+    position: relative;
+    bottom: -20px;
   }
   &__heading {
     display: inline;
@@ -877,10 +890,8 @@ option[default] {
 }
 
 .footer {
-  padding: 40px auto 20px;
   background-color: var(--main-color);
-
-
+ 
 }
 
 .connection {
@@ -899,9 +910,8 @@ option[default] {
 .find-us {
   width: 262.5px;
   margin-right: 40px;
-
   &__title  {
-     margin-bottom: 15px;
+    margin-bottom: 15px;
   }
   &__img {
     margin-right: 15px;
@@ -915,7 +925,6 @@ option[default] {
   &__title {
     margin-bottom: 15px;
   }
-  
   &__ways {
     width: 167px;
   }
@@ -931,6 +940,8 @@ option[default] {
 
 .trusted {
   width: 262.5px;
+  align-items: center;
+  padding-top: 40px;
 
   &__link {
     margin-right: 20px;
