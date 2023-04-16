@@ -199,6 +199,7 @@ hr {
   text-transform: uppercase;
   text-decoration: none;
   border:0;
+  transition: 0.3s;
 
   &:hover {
     background-color: rgb(255, 175, 77);
@@ -867,7 +868,40 @@ option[default] {
 
 .faq {
   padding: 60px;
-  background-color: rgb(174, 42, 42);
+  background: #FFFFFF;
+
+  &__item {
+    margin-bottom: 5px;
+    padding: 20px;
+  }
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  background: #F2F9FF;
+  border: 1px solid #4DA6FF;
+  border-radius: 7px;
+
+  &__left {
+    margin-right: 10px;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #00466F;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #222526;
+  }
 }
 
 
@@ -1031,4 +1065,7 @@ option[default] {
     color: #BFDFFF;
     text-decoration: none;
   }
+}
+.btn {
+  text-align: center;
 }
