@@ -83,13 +83,14 @@ hr {
     display: flex;
     align-items: center;
   }
-    @media (max-width:1153px) {
+    @media (max-width:1156px) {
       &__login {
         display: none;
       }
       &__find {
         display: flex;
         margin-right: 20px;
+        cursor: pointer;
       }
       &__menu {
         display: block;
@@ -106,11 +107,6 @@ hr {
   max-width: 1200px;
   margin: auto;
   padding: 0 15px;
-
-  // @media (max-width:1153px) {
-  //   background-color: rgb(237, 202, 208);
-  //   width: 750px;
-  // }
 }
 
 .logo {
@@ -183,21 +179,12 @@ hr {
     text-decoration: none;
     transition: 0.5s;
   }
-
-     @media (max-width: 1153px) {
-       .nav__item {
+    @media (max-width: 1153px) {
+      .nav__item {
         display: none;
-       } 
-     }
+      } 
+    }
 }
-
-
-
-
-
-
-
-
 
 
 .dropdown {
@@ -280,16 +267,41 @@ hr {
     font-style: normal;
     font-weight: 400;
     text-align: left;
-  }
 
-  &__title--highlight{
-    color: #FDC420;
+    &--new-line {
+      display: block;
+    }
+    &--highlight{
+        color: #FDC420;
+      }
   }
 
   @media (max-width:1153px) {
+    &__box {
+      flex-direction: column;
+    }
     &__title {
       width:720px;
-    }
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 15px;
+
+      &--highlight {
+        display: none;
+      }
+
+      &--new-line {
+        display: inline;
+        &:before {
+            content: "Research Paper ";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 40px;
+            color: #FFC400;
+          }
+      }
+     }
 
       &__image {
         display: none;
@@ -344,7 +356,7 @@ hr {
   }
 
   @media (max-width:1153px) {
-      flex-direction: row;
+      flex-direction: column;
       background-color: red;
     
   }
@@ -928,9 +940,13 @@ option[default] {
 .listing {
   margin-bottom: 30px;
   width: 303px;
-
+  display: flex;
+  justify-content: center;
+  
   &__main {
     list-style: none;
+    align-items: center;
+    text-align: left;
   }
   &__unit {
     margin-bottom: 10px;
@@ -1088,11 +1104,23 @@ option[default] {
     line-height: 25px;
     color: #FFFFFF;
   }
+
+  @media (max-width:1155px) {
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title--visible {
+      display: inline;
+    }
+    
+  }
 }
 
 .footer {
   background-color: var(--main-color);
- 
+  padding: 40px 24px 20px;
+  
 }
 
 .connection {
@@ -1114,6 +1142,7 @@ option[default] {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     gap: 40px;
+    border-bottom: 1px solid #F2F9FF;;
   }
 }
 
@@ -1154,7 +1183,7 @@ option[default] {
 .trusted {
   width: 262.5px;
   align-items: center;
-  padding-top: 40px;
+  // padding-top: 40px;
 
   &__link {
     margin-right: 20px;
@@ -1174,6 +1203,10 @@ option[default] {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #4E7288;
+
+  @media (max-width:1155px) {
+      border-bottom: 1px solid #F2F9FF;
+  }
 }
 .list {
   width: 262.5px;
@@ -1207,7 +1240,9 @@ option[default] {
     line-height: 25px;
     color: #FFFFFF;
   }
-  
+    @media (max-width:1155px) {
+      width: 213.33px;
+    }
 }
 
 .terms {
@@ -1236,7 +1271,9 @@ option[default] {
     color: #BFDFFF;
     text-decoration: none;
   }
+  
 }
+
 .btn {
   display: flex;
   justify-content: center;
