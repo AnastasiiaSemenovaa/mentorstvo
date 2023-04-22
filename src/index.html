@@ -109,7 +109,7 @@
                 <div class="main-form__left">
                     <h1 class="main-form__title">Get your professionally-researched and well-written <span class="main-form__title--highlight">Dissertation</span> <span class="main-form__title--new-line">with PapersOwl </span></h1>
 
-                      <form action="/" method="get" class="form">
+                      <form action="/" method="get" class="form form__middle">
                         <select name="essay-type" class="form__select">
                             <option value="" default selected>Essay (Any type)</option>
                             <option value="article">Article (Any type)</option>
@@ -135,7 +135,7 @@
 
                 </div>
                 <div class="main-form__right">
-                    <img src="images/owl.png" alt="owl" srcset="images/owl-ipad.svg 768w, images/owl.png 800w" class="main-form__image">
+                    <img src="images/owl.png" alt="owl" srcset="images/owl-ipad.svg 768w, images/owl-ipad.svg 400w" class="main-form__image">
                 </div>
             </div>
         </div>
@@ -271,15 +271,18 @@
           <div class="rating__box">
             <div class="rating__list">
               <div class="rating__platform">
-                <img
-                  src="images/site1.svg"
-                  alt="papersowl rate"
-                  class="rating__logo"
-                  width= "30px"
-                  height= "30px"
-                >
+                <div class="rating__site">
+                  <img
+                    src="images/site1.svg"
+                    alt="papersowl rate"
+                    class="rating__logo"
+                    width= "30px"
+                    height= "30px"
+                  >
+                  <span class="rating__name">Papersowl</span>
+                </div>
+                
                 <div class="rating__stars">
-                  Papersowl
                   <img
                     src="images/ratings.svg"
                     alt="exact rate from papersowl"
@@ -291,45 +294,26 @@
                 <div class="rating__number">4.7/5</div>
               </div>
               <div class="rating__platform">
-                <img
-                  src="images/site2.svg"
-                  alt="sitejabber rate"
-                  class="rating__logo"
-                  width= "30px"
-                  height= "30px"
-                >
+                <div class="rating__site">
+                  <img src="images/site2.svg" alt="papersowl rate" class="rating__logo" width="30px" height="30px">
+                  <span class="rating__name">Sitejabber</span>
+                </div>
+              
                 <div class="rating__stars">
-                  Sitejabber
-                <img
-                  src="images/sitejabber.svg"
-                  alt="exact rate from papersowl"
-                  class="rating__star"
-                  width= "58px"
-                  height= "10px"
-                >
+                  <img src="images/sitejabber.svg" alt="exact rate from papersowl" class="rating__star" width="58px" height="10px">
                 </div>
                 <div class="rating__number">4.7/5</div>
-              </div>
-                <div class="rating__platform">
-                  <img
-                    src="images/site3.svg"
-                    alt="reviews rate"
-                    class="rating__logo"
-                    width= "30px"
-                    height= "30px"
-                  >
-                  <div class="rating__stars">
-                    Reviews.io
-                    <img
-                      src="images/reviews.svg"
-                      alt="exact rate from papersowl"
-                      class="rating__star"
-                      width= "62px"
-                      height= "10px"
-                    >
-                  </div>
-                  <div class="rating__number">4.8/5</div>
+              </div><div class="rating__platform">
+                <div class="rating__site">
+                  <img src="images/site3.svg" alt="papersowl rate" class="rating__logo" width="30px" height="30px">
+                  <span class="rating__name">Reviews.io</span>
                 </div>
+              
+                <div class="rating__stars">
+                  <img src="images/reviews.svg" alt="exact rate from papersowl" class="rating__star" width="62px" height="10px">
+                </div>
+                <div class="rating__number">4.8/5</div>
+              </div>
               </div>
           </div>
         </div>
@@ -387,7 +371,7 @@
                 <a href="/" class="order-button writer__button">hire writer</a>
             </div>
 
-            <div class="writer__block">
+            <div class="writer__block writer__block--hide-phone">
                 <div class="writer__info">
                     <img
                       src="images/writer2.jpg"
@@ -495,63 +479,44 @@
         <section class="rating customers__ratings">
             <div class="container">
               <div class="rating__box">
-            <div class="rating__list">
-              <div class="rating__platform">
-                <img
-                  src="images/site1.svg"
-                  alt="papersowl rate"
-                  class="rating__logo"
-                  width= "30px"
-                  height= "30px"
-                >
-                <div class="rating__stars">
-                  Papersowl
-                  <img
-                    src="images/ratings.svg"
-                    alt="exact rate from papersowl"
-                    class="rating__star"
-                    width= "62px"
-                    height= "10px"
-                  >
-                </div>
-                <div class="rating__number">4.7/5</div>
-              </div>
-              <div class="rating__platform">
-                <img
-                  src="images/site2.svg"
-                  alt="sitejabber rate"
-                  class="rating__logo"
-                  width= "30px"
-                  height= "30px"
-                >
-                <div class="rating__stars">
-                  Sitejabber
-                <img
-                  src="images/sitejabber.svg"
-                  alt="exact rate from papersowl"
-                  class="rating__star"
-                  width= "58px"
-                  height= "10px"
-                >
-                </div>
-                <div class="rating__number">4.7/5</div>
-              </div>
-                <div class="rating__platform">
-                  <img src="images/site3.svg" alt="reviews rate" class="rating__logo" width= "30px"  height= "30px">
-                  <div class="rating__stars">
-                    Reviews.io
-                    <img
-                      src="images/reviews.svg"
-                      alt="exact rate from papersowl"
-                      class="rating__star"
-                      width= "62px"
-                      height= "10px"
-                    >
+                <div class="rating__list">
+                  <div class="rating__platform">
+                    <div class="rating__site">
+                      <img src="images/site1.svg" alt="papersowl rate" class="rating__logo" width="30px" height="30px">
+                      <span class="rating__name">Papersowl</span>
+                    </div>
+              
+                    <div class="rating__stars">
+                      <img src="images/ratings.svg" alt="exact rate from papersowl" class="rating__star" width="62px" height="10px">
+                    </div>
+                    <div class="rating__number">4.7/5</div>
                   </div>
-                  <div class="rating__number">4.8/5</div>
+                  <div class="rating__platform">
+                    <div class="rating__site">
+                      <img src="images/site2.svg" alt="papersowl rate" class="rating__logo" width="30px" height="30px">
+                      <span class="rating__name">Sitejabber</span>
+                    </div>
+              
+                    <div class="rating__stars">
+                      <img src="images/sitejabber.svg" alt="exact rate from papersowl" class="rating__star" width="58px"
+                        height="10px">
+                    </div>
+                    <div class="rating__number">4.7/5</div>
+                  </div>
+                  <div class="rating__platform">
+                    <div class="rating__site">
+                      <img src="images/site3.svg" alt="papersowl rate" class="rating__logo" width="30px" height="30px">
+                      <span class="rating__name">Reviews.io</span>
+                    </div>
+              
+                    <div class="rating__stars">
+                      <img src="images/reviews.svg" alt="exact rate from papersowl" class="rating__star" width="62px" height="10px">
+                    </div>
+                    <div class="rating__number">4.8/5</div>
+                  </div>
                 </div>
               </div>
-          </div>
+              </div>
         </div>
           </section>
 
@@ -597,7 +562,9 @@
             better paper.</p>
           </div>
         </div>
-        <a href="/" class="order-button client__button">order now</a>
+        <div class="btn">
+          <a href="/" class="order-button client__button">order now</a>
+        </div>
       </div>
     </section>
     <section class="order">
@@ -769,7 +736,7 @@
       <div class="container">
         <div class="trial__box">
           <div class="trial__page">
-            <h5 class="trial__order">Order <span class="trial__page-number">1 page </span>to test our writing service.Proceed to buying the full paper AFTER 1 page testing</h5>
+            <h5 class="trial__order">Order <span class="trial__page-number">1 page </span>to test our writing service. Proceed to buying the full paper AFTER 1 page testing</h5>
             <p class="trial__description">Submit your instructions and choose a writer. Make a deposit and start tracking your order in progress. Release the
             money if satisfied. Order a full version. ✅</p>
             <a href="/" class="order-button ">get one page</a>
@@ -778,6 +745,8 @@
             src="images/testpage.svg"
             alt="test page image"
             class="trial__img"
+            width="390"
+            height="350"
           >
         </div>
       </div>
@@ -1015,7 +984,7 @@
         </div>
       </div>
       <div class="links">
-        <div class="list links__one">
+        <div class="list">
           <ul class="list__main">
             <li class="list__link">Pay For Research Paper</li>
             <li class="list__link">Write My Research Paper</li>
@@ -1029,7 +998,7 @@
             <li class="list__link">Pay For Essay</li>
           </ul>
         </div>
-        <div class="list links__two">
+        <div class="list  list--none">
           <ul class="list__main">
             <li class="list__link">Do My Coursework</li>
             <li class="list__link">Research Paper Help</li>
@@ -1043,7 +1012,7 @@
             <li class="list__link">Buy Thesis</li>
           </ul>
         </div>
-        <div class="list links__three">
+        <div class="list  list--none">
           <ul class="list__main">
             <li class="list__link">Write My College Essay</li>
             <li class="list__link">Dissertation Writers</li>
@@ -1057,7 +1026,7 @@
             <li class="list__link">Write My Literature Review</li>
           </ul>
         </div>
-        <div class="list links__four">
+        <div class="list  list--none">
           <ul class="list__main">
             <li class="list__link">APA Paper Writing Service</li>
             <li class="list__link">Plagiarism-Free Essay</li>
@@ -1080,17 +1049,21 @@
           your college/university guidelines for plagiarism/paraphrase - if different; Citations - based on our recommendations
           and service’s T&C.</p>
         </div>
-        <div class="terms">
-          <p class="terms__line">2022 © papersowl.com. All rights reserved PapersOwl ™</p>
-          <p class="terms__line">Privacy Policy / Terms and Conditions / Acceptable Use Policy footer contact</p>
-          <p class="terms__line">Website papersowl.com is owned and operated by: RATATATA LTD48 Vitisha Boulevard, ground floor, 1000, Sofia,
-          BulgariaBulgarian reg. number: 206095338 </p>
-        </div>
-        <div class="we">
-          <div class="we__title">About Us</div>
-          <a href="/" class="we__link">How it Works</a>
-          <a href="/" class="we__link">Testimonials</a>
-          <a href="/" class="we__link">Top Writers</a>
+        <div class="law__info">
+          <div class="terms">
+            <p class="terms__line">2022 © papersowl.com. All rights reserved PapersOwl ™</p>
+            <p class="terms__line">Privacy Policy / Terms and Conditions / Acceptable Use Policy footer contact</p>
+            <p class="terms__line">Website papersowl.com is owned and operated by: RATATATA LTD48 Vitisha Boulevard, ground floor, 1000, Sofia,
+            BulgariaBulgarian reg. number: 206095338 </p>
+          </div>
+          <div class="we">
+            <div class="we__title">About Us</div>
+            <div class="we__menu">
+              <a href="/" class="we__link">How it Works</a>
+              <a href="/" class="we__link">Testimonials</a>
+              <a href="/" class="we__link">Top Writers</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
