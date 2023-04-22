@@ -302,18 +302,12 @@ hr {
     display: flex;
     align-items: center;
     padding: 60px 0;
+
     @media (max-width: 992px) {
       padding-top: 155px;
       align-items: flex-start;
     }
   }
-
-  // &__image {
-
-  //   // &--ipad {
-  //   // //  display: none;
-  //   // }
-  // }
 
   &__title {
     display: block;
@@ -325,6 +319,7 @@ hr {
     font-weight: 400;
     text-align: left;
     margin-bottom: 30px;
+
     &--new-line {
       display: block;
     }
@@ -340,7 +335,6 @@ hr {
   }
 
   @media (max-width: 992px) {
-
     &__title {
       width: 100%;
       font-size: 35px;
@@ -363,20 +357,8 @@ hr {
           }
       }
      }
-
-      // &__image {
-      //   //display: none;
-
-      //   &--ipad {
-      //      // display: block;
-      //   }
-      // }
-      
     }  
-
   }
-
-
 
 .form {
   padding: 20px;
@@ -399,6 +381,10 @@ hr {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMC40MTA4MjYgMC45MTA4MjZDMC43MzYyNjMgMC41ODUzODkgMS4yNjM5IDAuNTg1Mzg5IDEuNTg5MzQgMC45MTA4MjZMNi4wMDAwOCA1LjMyMTU3TDEwLjQxMDggMC45MTA4MjZDMTAuNzM2MyAwLjU4NTM4OSAxMS4yNjM5IDAuNTg1Mzg5IDExLjU4OTMgMC45MTA4MjZDMTEuOTE0OCAxLjIzNjI2IDExLjkxNDggMS43NjM5IDExLjU4OTMgMi4wODkzNEw2LjU4OTM0IDcuMDg5MzRDNi4yNjM5IDcuNDE0NzcgNS43MzYyNiA3LjQxNDc3IDUuNDEwODMgNy4wODkzNEwwLjQxMDgyNiAyLjA4OTM0QzAuMDg1Mzg4OCAxLjc2MzkgMC4wODUzODg4IDEuMjM2MjYgMC40MTA4MjYgMC45MTA4MjZaIiBmaWxsPSIjMjIyNTI2Ii8+Cjwvc3ZnPgo=");
     background-repeat: no-repeat;
     background-position: right 10px center;
+
+    @media (max-width: 992px) {
+      margin-bottom: 15px;
+    }
   }
   &__email {
     padding: 15px;
@@ -416,14 +402,17 @@ hr {
     height: 50px;
     font-family: 'Catamaran', sans-serif;
     cursor: pointer;
+
+    @media (max-width: 992px) {
+      margin-bottom: 10px;
+      display: inline-block;
+    }
   }
   &__agree-terms {
     font-size: 12px;
     line-height: 15px;
     opacity: 0.5;
   }
-
-
 }
 
 select {
@@ -440,17 +429,17 @@ option[default] {
 
 
 .pages {
-  padding: 15px 135px 0px;
+  // padding: 15px 135px 0px;
   background: #E6F2FF;
 
   &__box {
-    display: flex;
-    justify-content: space-around;
+    // display: flex;
+    // justify-content: space-around;
   }
 
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   &__icon {
@@ -464,6 +453,10 @@ option[default] {
     padding: 15px 35px;
     list-style: none;
     position: relative;
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+    
 
     svg path {
       transition: 0.3s;
@@ -514,11 +507,11 @@ option[default] {
         display: flex;
         justify-content: space-around;
       }
-  &__item {
-    width: 116px;
-    padding: 15px 0;
-    margin-right: 35px;
-  }
+    &__item {
+      // width: 116px;
+      // padding: 15px 0;
+      // margin-right: 35px;
+    }
 
 }
 }
@@ -1140,6 +1133,9 @@ option[default] {
     line-height: 25px;
     color: #222526;
   }
+  &__check {
+    display: block;
+  }
 }
 
 
@@ -1157,6 +1153,12 @@ option[default] {
   }
   &__heading {
     display: inline;
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
   }
   &__text {
     margin-top: 20px;
@@ -1171,12 +1173,30 @@ option[default] {
   @media (max-width: 992px) {
     &__box {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
+      
     }
     &__title--visible {
       display: inline;
     }
-    
+    &__heading {
+      display: block;
+    }
+    &__img {
+      top: 20px;    
+    }
+    .form {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 40px;
+
+      &__agree-terms {
+        display: block;
+        position: relative;
+        top: 230px;
+        left: 20px;
+      }
+    }
   }
 }
 
@@ -1184,34 +1204,55 @@ option[default] {
   background-color: var(--main-color);
   padding: 40px 24px 20px;
   
-}
-
-.connection {
+  &__box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  flex-direction: column;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
   color: #FFFFFF;
-  border-bottom: 1px solid #4E7288;
 
   @media (max-width: 992px) {
     padding-top: 40px;
     justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    gap: 40px;
-    border-bottom: 1px solid #F2F9FF;;
+    }
   }
 }
+
+.connection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #4E7288;
+  @media (max-width: 992px) {
+    flex-direction: column;    
+    border-bottom: 1px solid #F2F9FF;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+      flex-direction: row;
+    }
+  }
+}
+
 
 .find-us {
   width: 262.5px;
   margin-right: 40px;
+
   &__title  {
     margin-bottom: 15px;
   }
@@ -1221,7 +1262,7 @@ option[default] {
 }
 
 .cards {
-  width: 262.5px;
+  // width: 262.5px;
   margin-right: 40px;
 
   &__title {
@@ -1229,33 +1270,54 @@ option[default] {
   }
   &__ways {
     width: 190px;
+    @media (max-width: 992px) {
+      width: 340px;
+    }
   }
   &__icon {
     margin-bottom: 14px;
     &:not(:nth-child(3n)) {
       margin-right: 15px;
     }
+    @media (max-width: 992px) {
+      &:nth-child(3n){
+        margin-right:15px;
+      }
+    }
+  }
+    
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  @media (max-width: 992px) {
+   justify-content: flex-start;
+
+  }
 }
 
-}
 .dmca {
   width: 262.5px;
-  margin-right: 40px;
 }
 
 .trusted {
   width: 262.5px;
   align-items: center;
-  // padding-top: 40px;
+}
+.canada {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 160px;
 
   &__link {
-    margin-right: 20px;
-  }
-  &__img {
-    margin-bottom: 40px;
+      margin-right: 20px;
+    }
+  @media (max-width: 992px) {
+    margin-right: 0px;
   }
 }
-
 
 
 .links {

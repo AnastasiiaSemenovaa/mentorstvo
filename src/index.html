@@ -868,9 +868,9 @@
               That way, you submit the work you wrote yourself as guided by our research.</p>
             </div>
             <div class="question__right">
-              <img src="./images/chevron.svg" alt="check" class="question__check">
+              <img src="./images/chevron.svg" alt="check" class="question__check" width="20px" height="20">
             </div>
-            </div>
+          </div>
 
           <div class="faq__item question">
             <div class="question__left">
@@ -924,10 +924,10 @@
             >
           </div>
           <div class="bottom-form__right">
-            <h2 class="main-form__title bottom-form__heading">Why wait? Place and <span class="main-form__title--highlight bottom-form__title--visible">order right now!</span></h2>
+            <h2 class="bottom-form__heading">Why wait? Place and <span class="main-form__title--highlight bottom-form__title--visible">order right now!</span></h2>
             <p class="bottom-form__text">Just fill out the form, press the button, and have no worries!</p>
-            <div class="form">
-              <form action="/" method="POST">
+            <!-- <div class="form"> -->
+              <form action="/" method="POST" class="form">
                 <select name="essay-type" class="form__select">
                   <option value="" default selected>Essay (Any type)</option>
                   <option value="article">Article (Any type)</option>
@@ -941,11 +941,11 @@
                 </select>
                 <input type="email" name="email" placeholder="my@mail.com" class="form__email">
                 <button type="submit" class="order-button form__button">continue</button>
-                <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service
+                 <p class="form__agree-terms">By clicking “Let's start now”, you agree to our terms of service
                   and privacy policy. We’ll occasionally send you promo
                   and account related emails.</p>
               </form>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -953,142 +953,146 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__box">
-    <div class="connection">
-      <div class="find-us">
-        <div class="find-us__title">Find us </div>
-        <div class="find-us__links">
-          <img src="images/facebook.svg" alt="facebook" class="find-us__img">
-          <img src="images/twitter.svg" alt="twitter" class="find-us__img">
-          <img src="images/instagram.svg" alt="instagram" class="find-us__img">
-          <img src="images/tiktok.svg" alt="tiktok" class="find-us__img">
-        </div>
-      </div>
-      <div class="cards">
-        <div class="cards__title">We Accept:</div>
-        <div class="cards__ways">
-          <img src="images/payment(1).svg" alt="Visa" class="cards__icon">
-          <img src="images/payment(2).svg" alt="Mastercard" class="cards__icon">
-          <img src="images/payment(3).svg" alt="American Express" class="cards__icon">
-          <img src="images/payment(4).svg" alt="JCB" class="cards__icon">
-          <img src="images/payment(5).svg" alt="UnionPay" class="cards__icon">
-        </div>
-      </div>
-        <div class="dmca">
-          <img
-            src="images/dmca.svg"
-            alt="DMCA"
-            class="dmca__img"
-            width="104"
-            height="50"
-          >
-        </div>
-        <div class="trusted">
-          <img
-            src="images/trusted.svg"
-            alt="Icon for trusted website"
-            class="trusted__img"
-            width="120"
-            height="50"
-          >
-          <div class="canada-block">
-            <img
-              src="images/link.svg"
-              alt="Icon for link"
-              class="trusted__link"
-              width="40"
-              height="40">
-            <img
-              src="images/Canada (CA).svg"
-              alt="Canada flag"
-              class="trusted__canada"
-              width="40"
-              height="30">
+      <div class="connection">
+        <div class="connection__left">
+          <div class="find-us">
+            <div class="find-us__title">Find us </div>
+            <div class="find-us__links">
+              <img src="images/facebook.svg" alt="facebook" class="find-us__img">
+              <img src="images/twitter.svg" alt="twitter" class="find-us__img">
+              <img src="images/instagram.svg" alt="instagram" class="find-us__img">
+              <img src="images/tiktok.svg" alt="tiktok" class="find-us__img">
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards__title">We Accept:</div>
+            <div class="cards__ways">
+              <img src="images/payment(1).svg" alt="Visa" class="cards__icon">
+              <img src="images/payment(2).svg" alt="Mastercard" class="cards__icon">
+              <img src="images/payment(3).svg" alt="American Express" class="cards__icon">
+              <img src="images/payment(4).svg" alt="JCB" class="cards__icon">
+              <img src="images/payment(5).svg" alt="UnionPay" class="cards__icon">
+            </div>
           </div>
         </div>
-    </div>
-    <div class="links">
-      <div class="list links__one">
-        <ul class="list__main">
-          <li class="list__link">Pay For Research Paper</li>
-          <li class="list__link">Write My Research Paper</li>
-          <li class="list__link">Essay For Sale</li>
-          <li class="list__link">Buy Dissertation</li>
-          <li class="list__link">Do My PowerPoint Presentation</li>
-          <li class="list__link">Buy APA Research Paper</li>
-          <li class="list__link">Write My Assignment</li>
-          <li class="list__link">Buy College Essay</li>
-          <li class="list__link">Write My Paper</li>
-          <li class="list__link">Pay For Essay</li>
-        </ul>
+        <div class="connection__right">
+          <div class="logos">
+            <div class="dmca">
+              <img
+                src="images/dmca.svg"
+                alt="DMCA"
+                class="dmca__img"
+                width="104"
+                height="50"
+              >
+            </div>
+            <div class="trusted">
+              <img
+                src="images/trusted.svg"
+                alt="Icon for trusted website"
+                class="trusted__img"
+                width="120"
+                height="50"
+              >
+            </div>
+          </div>
+          <div class="canada">
+            <div class="canada__block">
+              <img
+                src="images/link.svg"
+                alt="Icon for link"
+                class="canada__link"
+                width="40"
+                height="40">
+              <img
+                src="images/Canada (CA).svg"
+                alt="Canada flag"
+                class="canada__pic"
+                width="40"
+                height="30">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="list links__two">
-        <ul class="list__main">
-          <li class="list__link">Do My Coursework</li>
-          <li class="list__link">Research Paper Help</li>
-          <li class="list__link">Papers For Money</li>
-          <li class="list__link">Buy Literature Review</li>
-          <li class="list__link">Write Essay For Money</li>
-          <li class="list__link">Essay Help</li>
-          <li class="list__link">Buy College Papers</li>
-          <li class="list__link">Research Paper For Sale</li>
-          <li class="list__link">Argumentative Essay Writing</li>
-          <li class="list__link">Buy Thesis</li>
-        </ul>
+      <div class="links">
+        <div class="list links__one">
+          <ul class="list__main">
+            <li class="list__link">Pay For Research Paper</li>
+            <li class="list__link">Write My Research Paper</li>
+            <li class="list__link">Essay For Sale</li>
+            <li class="list__link">Buy Dissertation</li>
+            <li class="list__link">Do My PowerPoint Presentation</li>
+            <li class="list__link">Buy APA Research Paper</li>
+            <li class="list__link">Write My Assignment</li>
+            <li class="list__link">Buy College Essay</li>
+            <li class="list__link">Write My Paper</li>
+            <li class="list__link">Pay For Essay</li>
+          </ul>
+        </div>
+        <div class="list links__two">
+          <ul class="list__main">
+            <li class="list__link">Do My Coursework</li>
+            <li class="list__link">Research Paper Help</li>
+            <li class="list__link">Papers For Money</li>
+            <li class="list__link">Buy Literature Review</li>
+            <li class="list__link">Write Essay For Money</li>
+            <li class="list__link">Essay Help</li>
+            <li class="list__link">Buy College Papers</li>
+            <li class="list__link">Research Paper For Sale</li>
+            <li class="list__link">Argumentative Essay Writing</li>
+            <li class="list__link">Buy Thesis</li>
+          </ul>
+        </div>
+        <div class="list links__three">
+          <ul class="list__main">
+            <li class="list__link">Write My College Essay</li>
+            <li class="list__link">Dissertation Writers</li>
+            <li class="list__link">Write My Dissertation</li>
+            <li class="list__link">Buy Capstone Project</li>
+            <li class="list__link">Pay For Papers</li>
+            <li class="list__link">College Papers Help</li>
+            <li class="list__link">Do My Essay</li>
+            <li class="list__link">Write My Thesis</li>
+            <li class="list__link">Nursing Paper Writing Service</li>
+            <li class="list__link">Write My Literature Review</li>
+          </ul>
+        </div>
+        <div class="list links__four">
+          <ul class="list__main">
+            <li class="list__link">APA Paper Writing Service</li>
+            <li class="list__link">Plagiarism-Free Essay</li>
+            <li class="list__link">Order Essay</li>
+            <li class="list__link">Write My Philosophy Paper</li>
+            <li class="list__link">Write My Lab Report</li>
+            <li class="list__link">Buy Term Paper</li>
+            <li class="list__link">Buy MLA Paper</li>
+            <li class="list__link">Fast Essay Writing Service</li>
+            <li class="list__link">Buy Research Paper</li>
+            <li class="list__link">Buy Research Proposal</li>
+          </ul>
+        </div>
       </div>
-      <div class="list links__three">
-        <ul class="list__main">
-          <li class="list__link">Write My College Essay</li>
-          <li class="list__link">Dissertation Writers</li>
-          <li class="list__link">Write My Dissertation</li>
-          <li class="list__link">Buy Capstone Project</li>
-          <li class="list__link">Pay For Papers</li>
-          <li class="list__link">College Papers Help</li>
-          <li class="list__link">Do My Essay</li>
-          <li class="list__link">Write My Thesis</li>
-          <li class="list__link">Nursing Paper Writing Service</li>
-          <li class="list__link">Write My Literature Review</li>
-        </ul>
+      <div class="law">
+        <div class="cases">
+          <div class="cases__heading"> Our services can be used in the following cases for:</div>
+          <p class="cases__explain">Research into the subject, generating initial input for futher reasoning and citations; Comparison of key points of view
+          on the subject, general reasoning; Paraphrasing in accordance with major educational standards as well as tailored to
+          your college/university guidelines for plagiarism/paraphrase - if different; Citations - based on our recommendations
+          and service’s T&C.</p>
+        </div>
+        <div class="terms">
+          <p class="terms__line">2022 © papersowl.com. All rights reserved PapersOwl ™</p>
+          <p class="terms__line">Privacy Policy / Terms and Conditions / Acceptable Use Policy footer contact</p>
+          <p class="terms__line">Website papersowl.com is owned and operated by: RATATATA LTD48 Vitisha Boulevard, ground floor, 1000, Sofia,
+          BulgariaBulgarian reg. number: 206095338 </p>
+        </div>
+        <div class="we">
+          <div class="we__title">About Us</div>
+          <a href="/" class="we__link">How it Works</a>
+          <a href="/" class="we__link">Testimonials</a>
+          <a href="/" class="we__link">Top Writers</a>
+        </div>
       </div>
-      <div class="list links__four">
-        <ul class="list__main">
-          <li class="list__link">APA Paper Writing Service</li>
-          <li class="list__link">Plagiarism-Free Essay</li>
-          <li class="list__link">Order Essay</li>
-          <li class="list__link">Write My Philosophy Paper</li>
-          <li class="list__link">Write My Lab Report</li>
-          <li class="list__link">Buy Term Paper</li>
-          <li class="list__link">Buy MLA Paper</li>
-          <li class="list__link">Fast Essay Writing Service</li>
-          <li class="list__link">Buy Research Paper</li>
-          <li class="list__link">Buy Research Proposal</li>
-        </ul>
-      </div>
-    </div>
-    <div class="law">
-      <div class="cases">
-        <div class="cases__heading"> Our services can be used in the following cases for:</div>
-        <p class="cases__explain">Research into the subject, generating initial input for futher reasoning and citations; Comparison of key points of view
-        on the subject, general reasoning; Paraphrasing in accordance with major educational standards as well as tailored to
-        your college/university guidelines for plagiarism/paraphrase - if different; Citations - based on our recommendations
-        and service’s T&C.</p>
-      </div>
-      <div class="terms">
-        <p class="terms__line">2022 © papersowl.com. All rights reserved PapersOwl ™</p>
-        <p class="terms__line">Privacy Policy / Terms and Conditions / Acceptable Use Policy footer contact</p>
-        <p class="terms__line">Website papersowl.com is owned and operated by: RATATATA LTD48 Vitisha Boulevard, ground floor, 1000, Sofia,
-        BulgariaBulgarian reg. number: 206095338 </p>
-      </div>
-      <div class="we">
-        <div class="we__title">About Us</div>
-        <a href="/" class="we__link">How it Works</a>
-        <a href="/" class="we__link">Testimonials</a>
-        <a href="/" class="we__link">Top Writers</a>
-      </div>
-    </div>
-
-
-
-
     </div>
   </div>
 </footer>
