@@ -16,7 +16,10 @@
     <div class="container">
         <div class="header__box">
             <div class="header__logo logo">
-                <img src="images/logo_x2.png" alt="logo" class="logo__img">
+              <picture >
+                <source media="(max-width: 767px)" srcset="images/logo2.svg" />
+                <img src="images/logo1.svg" alt="logo">
+              </picture>
             </div>
             <div class="header__navigate">
                 <nav class="nav">
@@ -135,7 +138,12 @@
 
                 </div>
                 <div class="main-form__right">
-                    <img src="images/owl.png" alt="owl" srcset="images/owl-ipad.svg 768w, images/owl-ipad.svg 400w" class="main-form__image">
+                  <picture class="main-form__image">
+                    <source media="(max-width: 992px)" srcset="images/owl-ipad.svg"/>
+                    <source media="(max-width: 767px)" srcset="images/owl-phone.svg" />
+                    <img src="images/owl.svg" alt="owl">
+                  </picture>
+                    <!-- <img src="images/owl.png" alt="owl" srcset="images/owl-ipad.svg 768w, images/owl-ipad.svg 400w" class="main-form__image"> -->
                 </div>
             </div>
         </div>
@@ -896,7 +904,7 @@
             <h2 class="bottom-form__heading">Why wait? Place and <span class="main-form__title--highlight bottom-form__title--visible">order right now!</span></h2>
             <p class="bottom-form__text">Just fill out the form, press the button, and have no worries!</p>
             <!-- <div class="form"> -->
-              <form action="/" method="POST" class="form">
+              <form action="/" method="POST" class="form bottom-form__phone">
                 <select name="essay-type" class="form__select">
                   <option value="" default selected>Essay (Any type)</option>
                   <option value="article">Article (Any type)</option>
