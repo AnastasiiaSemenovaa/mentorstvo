@@ -5,6 +5,7 @@
 img {
   vertical-align: bottom;
   max-width: 100%;
+  height: auto;
 }
 
 body,
@@ -1347,14 +1348,13 @@ option[default] {
     }
   }
   &__img {
-    margin-right: 40px;
-    position: relative;
-    bottom: -20px;
+    margin: 0 40px -20px 0;
     @media (max-width: 992px) {
       top: 20px;
     }
     @media (max-width: 767px) {
       width: 254px;
+      margin: 0 40px -32px 0;
     }
   }
   &__heading {
@@ -1389,13 +1389,15 @@ option[default] {
       font-size: 16px;
     }
   }
-  @media (max-width: 992px) {
-    &__title--visible {
+
+  &__title--visible {
+    @media (max-width: 992px) {
       display: inline;
     }
   }
-  @media (max-width: 767px) {
-    &__phone {
+
+  &__form {
+    @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -1452,18 +1454,26 @@ option[default] {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    width: calc(50% - 20px);
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
 
     @media (max-width: 767px) {
       flex-direction: column;
+      margin-bottom: 20px;
     }
   }
   &__right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: calc(50% - 20px);
 
     @media (max-width: 992px) {
       flex-direction: row;
+      width: 100%;
     }
     @media (max-width: 767px) {
       flex-direction: column;
@@ -1473,8 +1483,7 @@ option[default] {
 
 
 .find-us {
-  width: 262.5px;
-  margin-right: 40px;
+  width: calc(50% - 20px);
 
   &__title  {
     margin-bottom: 15px;
@@ -1483,14 +1492,18 @@ option[default] {
     margin-right: 15px;
   }
 
-    @media (max-width: 767px) {
-      margin-bottom: 20px;
-    }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .cards {
-  margin-right: 40px;
+  width: calc(50% - 20px);
 
+  @media (max-width: 767px) {
+    width: 100%;
+  }
   &__title {
     margin-bottom: 15px;
   }
@@ -1520,36 +1533,40 @@ option[default] {
 
   @media (max-width: 992px) {
    justify-content: flex-start;
+    width: calc(50% - 20px);
   }
   @media (max-width: 767px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    // margin-left: 150px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
 .dmca {
-  width: 262.5px;
+  width: calc(50% - 20px);
+  @media (max-width: 767px) {
+    width: auto;
+    margin-right: 15px;
+  }
 }
 
 .trusted {
-  width: 262.5px;
+  width: calc(50% - 20px);
   align-items: flex-start;
 }
 .canada{
   display: flex;
-  justify-content: flex-end;
-  // margin-right: 160px;
+  justify-content: flex-start;
+  width: calc(50% - 20px);
+  margin-left: calc(50% + 20px);
 
   &__link {
-      margin-right: 20px;
-    }
+    margin-right: 20px;
+  }
   @media (max-width: 992px) {
-    margin-right: 0px;
+    margin-left: 0;
   }
   @media (max-width: 767px) {
-    flex-direction: column;
-    margin-left: 150px;
+    width: 100%;
   }
 }
 
@@ -1569,15 +1586,24 @@ option[default] {
   @media (max-width: 767px) {
     justify-content: flex-start;
   }
-}
-.list {
-  width: 262.5px;
 
-  @media (max-width: 767px) {
-    &--none {
+  &__col {
+    width: calc(25% - 20px);
+
+    @media (max-width: 767px) {
       display: none;
+      width: 100%;
+
+    }
+    &:first-child {
+      @media (max-width: 767px) {
+        display: block;
+      }
     }
   }
+}
+
+.list {
 
   &__link {
     list-style: none;
@@ -1610,6 +1636,7 @@ option[default] {
       display: flex;
       flex-direction: column-reverse;
       margin: 15px 0;
+      width: 100%;
     }
   }
 }
@@ -1628,7 +1655,7 @@ option[default] {
       width: 213.33px;
     }
     @media (max-width: 767px) {
-      width: 300px;
+      width: 100%;
       display: block;
       margin: 0 auto;
     }
@@ -1638,7 +1665,7 @@ option[default] {
   width: 262.5px;
   margin-right: 40px;
   @media (max-width: 767px) {
-    width: 300px;
+    width: 100%;
     display: block;
     margin: 0 auto;
   }
